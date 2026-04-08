@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің Блогым</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <header>
+        <h1>Менің жеке блогым</h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="indexx.html">Басты бет</a> 
+            <a href="bllog.html">Блог</a>
+        </div>
+    </nav>
+
+    <main class="grid-container">
+        <article class="card">
+            <article class="card">
+
+    <div class="lab-item">
+        <h3>1-жұмыс: Сәлемдесу</h3>
+        <input type="text" id="name" placeholder="Атыңызды жазыңыз" class="lab-input">
+        <button onclick="sayHello()" class="lab-btn">Көрсету</button>
+    </div>
+
+    <div class="lab-item">
+        <h3>2-жұмыс: Екі санның қосындысы (5+3)</h3>
+        <button onclick="calculate()" class="lab-btn">Есептеу</button>
+    </div>
+
+    <div class="lab-item">
+        <h3>3-жұмыс: Мәліметтер формасы</h3>
+        <p>Аты: <input type="text" id="username" class="lab-input"></p>
+        <p>Жасы: <input type="number" id="age" class="lab-input"></p>
+        <button onclick="showInfo()" class="lab-btn">Мәліметті шығару</button>
+    </div>
+
+    <div class="lab-item">
+        <h3>Үй жұмысы: Күн және түс таңдау</h3>
+        <p>Күн: <input type="date" id="date" class="lab-input"></p>
+        <p>Түс: <input type="color" id="color" class="lab-input"></p>
+        <button onclick="changeBackground()" class="lab-btn">Қолдану</button>
+    </div>
+</article>
+
+<script>
+    // 1-жұмыс функциясы [cite: 17-20]
+    function sayHello() {
+        let tname = document.getElementById("name").value;
+        alert("Сәлем, " + name);
+    }
+
+    // 2-жұмыс функциясы [cite: 37-42]
+    function calculate() {
+        let a = 5;
+        let b = 3;
+        let result = a + b;
+        alert("Нәтиже: " + result);
+    }
+
+    // 3-жұмыс функциясы [cite: 74-78]
+    function showInfo() {
+        let name = document.getElementById("username").value;
+        let age = document.getElementById("age").value;
+        alert("Аты: " + name + "\nЖасы: " + age);
+    }
+
+    // Үй жұмысы функциясы [cite: 107-112]
+    function changeBackground() {
+        let selectedDate = document.getElementById("date").value;
+        let selectedColor = document.getElementById("color").value;
+        alert("Таңдалған күн: " + selectedDate + "\nТаңдалған түс: " + selectedColor);
+        document.body.style.backgroundColor = selectedColor;
+    }
+</script>
+            <h2>Менің мамандығым</h2>
+            <p class="subtitle">Информатика пәнін таңдаған себебім</p>
+            <p>Мен болашақта оқушыларға IT саласының маңызын түсіндіріп, жаңа технологиялармен жұмыс істеуді үйреткім келеді.</p>
+            <p>Информатика адамның логикалық ойлауын дамытып, аналитикалық қабілетін арттырады.</p>
+            
+            <div class="goals">
+                <h3>Менің мақсаттарым:</h3>
+                <ul>
+                    <li>HTML/CSS меңгеру</li>
+                    <li>JavaScript үйрену</li>
+                    <li>Жеке жобалар жасау</li>
+                    <li>Python үйрену</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card">
+            <h2>Менің хоббиім</h2>
+            <p><strong>Кітап оқу және тамақ әзірлеу:</strong> Бос уақытымда мен әдеби шығармаларды оқығанды ұнатамын. Бұл ой-өрісті кеңейтеді.</p>
+            <blockquote class="thought">
+                <strong>Ой:</strong> Уақытты тиімді пайдалану даму үшін өте маңызды деп есептеймін.
+            </blockquote>
+        </article>
+    </main>
+
+    <footer>
+        <p>Бекмұханбет Көркем | 2026 жыл</p>
+    </footer>
+
+</body>
+</html>
